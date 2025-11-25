@@ -1,0 +1,68 @@
+✨ COSMÉTICOS v1.0 - Sistema de Gestión de Pedidos ✨
+
+
+📋 DESCRIPCIÓN DEL PROGRAMA
+
+Este programa simula un sistema de gestión de pedidos para una empresa de cosméticos. Permite registrar clientes, artículos y pedidos, mostrando toda la información de manera organizada.
+
+🎯 ¿CÓMO FUNCIONA?
+
+1. 🚀 INICIALIZACIÓN: El programa crea datos de prueba automáticamente.
+2. 📦 ARTÍCULOS: Crea 5 productos cosméticos con precios diferentes.
+3. 👥 CLIENTES: Registra 3 clientes en el sistema.
+4. 📋 PEDIDOS: Cada cliente realiza un pedido con varios artículos.
+5. 📊 VISUALIZACIÓN: Muestra todos los pedidos con detalles completos.
+6. 🧹 LIMPIEZA: Libera toda la memoria utilizada correctamente.
+
+🔗 RELACIONES ENTRE CLASES
+
+• Pedido → Cliente (Agregación Pura).
+• Pedido → Artículo (Agregación Pura - múltiples artículos).
+• Cada pedido puede contener varios artículos con sus cantidades.
+
+📁 ESTRUCTURA DE CARPETAS
+
+📁 COSMETICOSv1.0/
+├── 📁 include/                 Archivos de cabecera (.hpp).
+│   ├── 📄 Articulo.hpp
+│   ├── 📄 Cliente.hpp
+│   └── 📄 Pedido.hpp
+├── 📁 src/                     Archivos de implementación (.cpp).
+│   ├── 📄 Articulo.cpp
+│   ├── 📄 Cliente.cpp
+│   ├── 📄 Pedido.cpp
+│   └── 📄 Main.cpp
+├── 📁 bin/                     Ejecutable compilado.
+│   └── 🚀 Cosmeticos.exe
+├── 📊 Cosmeticos.drawio        Diagrama UML del programa.
+└── 📄 Léeme.txt                Documentación del proyecto.
+
+
+🔧 PROCEDIMIENTO DE COMPILACIÓN
+
+Desde la carpeta raíz COSMETICOSv1.0/, ejecutar:
+
+1. Compilar todos los archivos .cpp:
+g++ -I include/ src/*.cpp -o bin/Cosmeticos.exe
+
+2. Ejecutar el programa:
+bin\Cosmeticos.exe
+
+🎨 CARACTERÍSTICAS
+
+✅ Programación Orientada a Objetos pura.
+✅ Gestión automática de memoria con new/delete.
+✅ Arrays dinámicos para artículos en pedidos.
+✅ Agregaciones puras entre clases.
+✅ Interfaz visual con emojis.
+✅ Protección contra inclusiones múltiples.
+✅ Namespace para organización.
+
+📝 NOTAS
+
+• El programa usa datos hardcodeados en Main.cpp
+• Capacidad máxima: 10 artículos por pedido.
+• Los precios se muestran en pesos ($)
+• Compatible con consola de Windows.
+
+🚀 ¡El programa está listo para ejecutar y demostrar el sistema de pedidos!
