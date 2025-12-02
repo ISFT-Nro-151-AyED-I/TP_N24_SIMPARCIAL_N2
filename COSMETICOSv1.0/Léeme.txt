@@ -43,6 +43,7 @@ Este programa simula un sistema de gestión de pedidos para una empresa de cosm�
 Desde la carpeta raíz COSMETICOSv1.0/, ejecutar:
 
 1. Compilar todos los archivos .cpp:
+
 g++ -I include/ src/*.cpp -o bin/Cosmeticos.exe
 
 2. Ejecutar el programa:

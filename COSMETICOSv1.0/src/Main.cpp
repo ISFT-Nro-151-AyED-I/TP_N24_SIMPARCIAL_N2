@@ -47,7 +47,7 @@ int main()
         
         Cliente* cliente1 = new Cliente(101, "Iván Leterribleu");
         Cliente* cliente2 = new Cliente(102, "José Coder");
-        Cliente* cliente3 = new Cliente(103, "Silvana Brujilda");
+        Cliente* cliente3 = new Cliente(103, "Silvana Vengerberg");
         
         std::cout << std::endl;
 
