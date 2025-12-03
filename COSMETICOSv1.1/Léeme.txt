@@ -1,0 +1,124 @@
+✨ COSMÉTICOS v1.1 - Sistema de Gestión de Pedidos Interactivo ✨
+
+📋 DESCRIPCIÓN DEL PROGRAMA
+
+Este programa es una versión mejorada del sistema de gestión de pedidos para una empresa de cosméticos. 
+Ahora incluye un menú interactivo completo que permite gestionar clientes, artículos y pedidos de manera 
+dinámica, además de mantener los datos de ejemplo precargados.
+
+🎯 ¿CÓMO FUNCIONA?
+
+1. 🚀 INICIALIZACIÓN: El programa carga automáticamente datos de ejemplo (5 artículos, 3 clientes, 3 pedidos).
+2. 🏠 MENÚ PRINCIPAL: Se muestra un menú interactivo con las siguientes opciones:
+   • Gestión de Clientes 👥
+   • Gestión de Artículos 🛍️
+   • Gestión de Pedidos 📋
+   • Mostrar estadísticas 📊
+   • Salir 🚪
+3. 📝 CREACIÓN DINÁMICA: Permite crear nuevos clientes, artículos y pedidos además de los precargados.
+4. 🔍 BÚSQUEDAS: Permite buscar por ID en todas las categorías.
+5. 📊 VISUALIZACIÓN: Muestra listados completos y detalles específicos.
+6. 🧹 LIMPIEZA: Libera toda la memoria utilizada al salir del programa.
+
+🆕 NOVEDADES EN VERSIÓN 1.1
+
+• ✅ Menú interactivo completamente funcional.
+• ✅ Capacidad para crear nuevos registros dinámicamente.
+• ✅ Sistema de búsqueda por ID en todas las categorías.
+• ✅ Estadísticas del sistema en tiempo real.
+• ✅ Arreglos estáticos con capacidad de 50 elementos cada uno.
+• ✅ Mejora en la interfaz de usuario con más emojis y formato.
+• ✅ Validación de entradas de usuario.
+• ✅ Pausas y limpieza de pantalla para mejor experiencia.
+
+🔗 RELACIONES ENTRE CLASES
+
+• Pedido → Cliente (Agregación Pura).
+• Pedido → Artículo (Agregación Pura - múltiples artículos).
+• Cada pedido puede contener varios artículos con sus cantidades.
+• El menú NO es una clase, está implementado con funciones modulares.
+
+📁 ESTRUCTURA DE CARPETAS
+
+📁 COSMETICOSv1.1/
+├── 📁 include/                 Archivos de cabecera (.hpp).
+│   ├── 📄 Articulo.hpp
+│   ├── 📄 Cliente.hpp
+│   ├── 📄 Pedido.hpp
+│   └── 📄 Menu.hpp             NUEVO: Menú interactivo
+├── 📁 src/                     Archivos de implementación (.cpp).
+│   ├── 📄 Articulo.cpp
+│   ├── 📄 Cliente.cpp
+│   ├── 📄 Pedido.cpp
+│   ├── 📄 Menu.cpp             NUEVO: Implementación del menú
+│   └── 📄 Main.cpp             MODIFICADO: Llamada única a menu()
+├── 📁 bin/                     Ejecutable compilado.
+│   └── 🚀 Cosmeticos.exe
+├── 📊 Cosmeticos.drawio        Diagrama UML actualizado del programa.
+└── 📄 Léeme.txt                Documentación del proyecto.
+
+🔧 PROCEDIMIENTO DE COMPILACIÓN
+
+Desde la carpeta raíz COSMETICOSv1.1/, ejecutar:
+
+1. Compilar todos los archivos .cpp:
+
+g++ -I include/ src/*.cpp -o bin/Cosmeticos.exe
+
+2. Ejecutar el programa:
+
+bin\Cosmeticos.exe
+
+⚙️ CAPACIDADES DEL SISTEMA
+
+• 👥 Clientes: 50 máximo.
+• 🛍️ Artículos: 50 máximo. 
+• 📋 Pedidos: 50 máximo.
+• 📦 Artículos por pedido: 50 máximo.
+• 💰 Precios: En pesos ($) con decimales.
+
+📝 FUNCIONALIDADES DEL MENÚ
+
+👥 MENÚ DE CLIENTES:
+   • Crear nuevo cliente.
+   • Listar todos los clientes.
+   • Buscar cliente por ID (muestra sus pedidos).
+
+🛍️ MENÚ DE ARTÍCULOS:
+   • Crear nuevo artículo.
+   • Listar todos los artículos.
+   • Buscar artículo por ID.
+
+📋 MENÚ DE PEDIDOS:
+   • Crear nuevo pedido (seleccionando cliente y artículos).
+   • Listar todos los pedidos.
+   • Buscar pedido por ID (muestra detalles completos).
+
+📊 ESTADÍSTICAS:
+   • Clientes registrados.
+   • Artículos registrados.
+   • Pedidos registrados.
+   • Ventas totales del sistema.
+
+🎨 CARACTERÍSTICAS TÉCNICAS
+
+✅ Programación Orientada a Objetos pura.
+✅ Gestión manual de memoria con new/delete.
+✅ Arrays estáticos con capacidad fija.
+✅ Agregaciones puras entre clases.
+✅ Interfaz visual mejorada con emojis.
+✅ Namespace para organización.
+✅ Modularización en .hpp y .cpp.
+✅ Validación de entradas de usuario.
+✅ Limpieza automática de buffers.
+✅ Soporte UTF-8 para caracteres especiales.
+
+
+📝 NOTAS IMPORTANTES
+
+• El programa mantiene los datos de ejemplo originales precargados.
+• Los IDs se autoincrementan automáticamente.
+• Se requiere consola de Windows para ejecución.
+• Los emojis requieren configuración UTF-8 (ya incluida en el código).
+
+🚀 ¡Ejecuta Cosmeticos.exe y comienza a gestionar tu tienda de cosméticos!
